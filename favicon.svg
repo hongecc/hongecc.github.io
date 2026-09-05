@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Charles monogram</title>
+  <desc id="desc">A minimal classical C and L monogram inside a double circular border.</desc>
+  <circle cx="48" cy="48" r="43" fill="none" stroke="#f4f1e8" stroke-width="1.6"/>
+  <circle cx="48" cy="48" r="38" fill="none" stroke="#f4f1e8" stroke-width="0.65" opacity="0.72"/>
+  <text x="47" y="60" text-anchor="middle" fill="#f4f1e8" font-family="Baskerville, 'Libre Baskerville', 'Times New Roman', serif" font-size="43" font-weight="400" letter-spacing="-5">CL</text>
+  <circle cx="48" cy="14" r="1.5" fill="#f4f1e8"/>
+  <circle cx="48" cy="82" r="1.5" fill="#f4f1e8"/>
+</svg>
