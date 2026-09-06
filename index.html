@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,10 +10,12 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Libre+Caslon+Display&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <div class="background-curves" aria-hidden="true">
     <span class="curve curve-one"></span>
@@ -21,12 +24,15 @@
 
   <header class="site-header">
     <nav class="nav-shell" aria-label="Main navigation">
+
       <a class="brand" href="#top" aria-label="Charles' portfolio home">
         <img src="assets/images/charles-mark.svg" alt="" />
       </a>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
         <span class="sr-only">Toggle navigation</span>
       </button>
 
@@ -35,126 +41,359 @@
         <li><a href="#experience">work</a></li>
         <li><a href="#projects">projects</a></li>
         <li><a href="testimonials.html">testimonials</a></li>
-        <li><a href="https://github.com/hongecc" target="_blank" rel="noopener noreferrer">github ↗</a></li>
       </ul>
+
     </nav>
   </header>
 
   <main id="top">
+
+    <!-- HERO -->
     <section class="hero section-shell reveal" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="hello">hello, i'm charles.</p>
-        <h1 id="hero-title">i like learning how things work — and how they break.</h1>
+
+        <p class="hello">
+          hello, i'm charles.
+        </p>
+
+        <h1 id="hero-title">
+          i like learning how things work — and how they break.
+        </h1>
+
         <p class="hero-lead">
-          I'm studying Cybersecurity &amp; Digital Forensics at Nanyang Polytechnic.
-          This is a small collection of things I've worked on, learned, and built along the way.
+          I'm studying Cybersecurity &amp; Digital Forensics at
+          Nanyang Polytechnic.
+
+          This is a small collection of things I've worked on,
+          learned, and built along the way.
         </p>
+
         <div class="hero-actions">
-          <a class="simple-link" href="#projects">see my projects</a>
-          <a class="simple-link" href="https://github.com/hongecc" target="_blank" rel="noopener noreferrer">github ↗</a>
-          <a class="simple-link" href="assets/resume/Lim_Charles_Resume.pdf" target="_blank" rel="noopener noreferrer">résumé ↗</a>
+          <a class="simple-link" href="#projects">
+            see my projects
+          </a>
+
+          <a class="simple-link" href="assets/resume/Lim_Charles_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            résumé ↗
+          </a>
         </div>
+
       </div>
     </section>
 
+
+    <!-- ABOUT -->
     <section id="about" class="section-shell section-block reveal">
+
       <h2>about</h2>
+
       <div class="simple-grid">
+
         <p>
-          Most of what I enjoy is hands-on: setting things up, finding out why they don't work,
-          fixing them, and understanding what went wrong in the first place.
+          Most of what I enjoy is hands-on: setting things up,
+          finding out why they don't work, fixing them, and
+          understanding what went wrong in the first place.
         </p>
+
         <p>
-          I spend most of my time around cybersecurity, networking, Linux, virtual machines,
-          Python, and small web projects. I also hold ISC2's Certified in Cybersecurity certification.
+          I spend most of my time around cybersecurity,
+          networking, Linux, virtual machines, Python, and small
+          web projects. I also hold ISC2's Certified in
+          Cybersecurity certification.
         </p>
+
       </div>
+
     </section>
 
+
+    <!-- SKILLS -->
     <section id="skills" class="section-shell section-block reveal">
+
       <h2>things i know</h2>
+
       <div class="plain-list">
-        <div><span>security</span><p>digital forensics, threat intelligence, penetration testing, system hardening</p></div>
-        <div><span>systems</span><p>linux, windows server, vmware esxi, fortigate, google cloud</p></div>
-        <div><span>networking</span><p>routers, ont/onr, fibre optics, troubleshooting, broadband services</p></div>
-        <div><span>building</span><p>python, sql, web development, power bi, ux/ui</p></div>
+
+        <div>
+          <span>security</span>
+          <p>
+            digital forensics, threat intelligence,
+            penetration testing, system hardening
+          </p>
+        </div>
+
+        <div>
+          <span>systems</span>
+          <p>
+            linux, windows server, vmware esxi,
+            fortigate, google cloud
+          </p>
+        </div>
+
+        <div>
+          <span>networking</span>
+          <p>
+            routers, ont/onr, fibre optics,
+            troubleshooting, broadband services
+          </p>
+        </div>
+
+        <div>
+          <span>building</span>
+          <p>
+            python, sql, web development,
+            power bi, ux/ui
+          </p>
+        </div>
+
       </div>
+
     </section>
 
+
+    <!-- EXPERIENCE -->
     <section id="experience" class="section-shell section-block reveal">
+
       <h2>things i've done</h2>
+
       <div class="records">
+
         <article class="record">
-          <div class="record-meta"><span>2025 — now</span><a href="https://www.ammeltech.com.sg/" target="_blank" rel="noopener noreferrer">Ammel Technologies ↗</a></div>
-          <div><h3>Field Engineer</h3><p>Broadband installation, routers, ONT/ONR equipment, fibre work, and troubleshooting customer networks.</p></div>
+
+          <div class="record-meta">
+            <span>2025 — now</span>
+
+            <a href="https://www.ammeltech.com.sg/" target="_blank" rel="noopener noreferrer">
+              Ammel Technologies ↗
+            </a>
+          </div>
+
+          <div>
+            <h3>Field Engineer</h3>
+
+            <p>
+              Broadband installation, routers, ONT/ONR equipment,
+              fibre work, and troubleshooting customer networks.
+            </p>
+          </div>
+
         </article>
+
+
         <article class="record">
-          <div class="record-meta"><span>2024 — 2025</span><a href="https://www.custodiotech.com.sg/" target="_blank" rel="noopener noreferrer">Custodio Technologies ↗</a></div>
-          <div><h3>Cybersecurity Intern</h3><p>Built a virtual machine for a cyber range and helped run security awareness training.</p></div>
+
+          <div class="record-meta">
+            <span>2024 — 2025</span>
+
+            <a href="https://www.custodiotech.com.sg/" target="_blank" rel="noopener noreferrer">
+              Custodio Technologies ↗
+            </a>
+          </div>
+
+          <div>
+            <h3>Cybersecurity Intern</h3>
+
+            <p>
+              Built a virtual machine for a cyber range and
+              helped run security awareness training.
+            </p>
+          </div>
+
         </article>
+
+
         <article class="record record-muted">
-          <div class="record-meta"><span>2023</span><span>ZENSHO Singapore</span></div>
-          <div><h3>Service Crew</h3><p>Food preparation, cashier work, customer service, and crowd management.</p></div>
+
+          <div class="record-meta">
+            <span>2023</span>
+            <span>ZENSHO Singapore</span>
+          </div>
+
+          <div>
+            <h3>Service Crew</h3>
+
+            <p>
+              Food preparation, cashier work,
+              customer service, and crowd management.
+            </p>
+          </div>
+
         </article>
+
       </div>
+
     </section>
 
+
+    <!-- EDUCATION -->
     <section id="education" class="section-shell section-block reveal">
+
       <h2>school</h2>
+
       <div class="records">
+
         <article class="record">
-          <div class="record-meta"><span>expected 2028</span><span>Nanyang Polytechnic</span></div>
-          <div><h3>Diploma in Cybersecurity &amp; Digital Forensics</h3><p>School of IT Club, Lumina Programme, volunteering, and NYP Scholarship (ITE Pathway).</p></div>
+
+          <div class="record-meta">
+            <span>expected 2028</span>
+            <span>Nanyang Polytechnic</span>
+          </div>
+
+          <div>
+            <h3>
+              Diploma in Cybersecurity &amp; Digital Forensics
+            </h3>
+
+            <p>
+              School of IT Club, Lumina Programme,
+              volunteering, and NYP Scholarship
+              (ITE Pathway).
+            </p>
+          </div>
+
         </article>
+
+
         <article class="record">
-          <div class="record-meta"><span>2024</span><span>Institute of Technical Education</span></div>
-          <div><h3>Higher Nitec in Cyber &amp; Network Security</h3><p>Graduated top in cohort and built a CTF challenge box for vulnerability assessment and exploitation practice.</p></div>
+
+          <div class="record-meta">
+            <span>2024</span>
+            <span>Institute of Technical Education</span>
+          </div>
+
+          <div>
+            <h3>
+              Higher Nitec in Cyber &amp; Network Security
+            </h3>
+
+            <p>
+              Graduated top in cohort and built a CTF
+              challenge box for vulnerability assessment
+              and exploitation practice.
+            </p>
+          </div>
+
         </article>
+
       </div>
+
     </section>
 
+
+    <!-- PROJECTS -->
     <section id="projects" class="section-shell section-block reveal">
+
       <h2>projects</h2>
+
       <div class="project-list">
+
+        <!-- HOBBYCONNECT -->
         <article class="project">
-          <a class="project-image-wrap" href="assets/images/hobbyconnect.png" target="_blank" aria-label="Open HobbyConnect screenshot">
-            <img src="assets/images/hobbyconnect.png" alt="HobbyConnect web application homepage" class="project-image" loading="lazy" />
+
+          <a class="project-image-wrap" href="assets/images/hobbyconnect.png" target="_blank"
+            aria-label="Open HobbyConnect screenshot">
+
+            <img src="assets/images/hobbyconnect.png" alt="HobbyConnect web application homepage" class="project-image"
+              loading="lazy" />
+
           </a>
+
           <div class="project-copy">
+
             <h3>HobbyConnect</h3>
-            <p>A web application about bringing youth and seniors together through shared hobbies and activities.</p>
-            <small>python · sql · web</small>
+
+            <p>
+              A web application about bringing youth and
+              seniors together through shared hobbies
+              and activities.
+            </p>
+
+            <small>
+              python · sql · web
+            </small>
+
           </div>
+
         </article>
 
+
+        <!-- POTATO VM -->
         <article class="project">
-          <a class="project-image-wrap" href="assets/images/potatovm.png" target="_blank" aria-label="Open Potato VM screenshot">
-            <img src="assets/images/potatovm.png" alt="Potato vulnerable virtual machine running in VMware" class="project-image" loading="lazy" />
+
+          <a class="project-image-wrap" href="assets/images/potatovm.png" target="_blank"
+            aria-label="Open Potato VM screenshot">
+
+            <img src="assets/images/potatovm.png" alt="Potato vulnerable virtual machine running in VMware"
+              class="project-image" loading="lazy" />
+
           </a>
+
           <div class="project-copy">
+
             <h3>Potato VM</h3>
-            <p>A deliberately vulnerable VM I made for hardening and penetration-testing practice.</p>
-            <small>ubuntu · metasploit · pentesting</small>
-            <a class="simple-link" href="https://drive.google.com/drive/folders/1YpQDiks93Q67N4wd5oeI0JlGZL3AYIdK?usp=sharing" target="_blank" rel="noopener noreferrer">project files ↗</a>
+
+            <p>
+              A deliberately vulnerable VM I made for
+              hardening and penetration-testing practice.
+            </p>
+
+            <small>
+              ubuntu · metasploit · pentesting
+            </small>
+
+            <a class="simple-link"
+              href="https://drive.google.com/drive/folders/1YpQDiks93Q67N4wd5oeI0JlGZL3AYIdK?usp=sharing"
+              target="_blank" rel="noopener noreferrer">
+              project files ↗
+            </a>
+
           </div>
+
         </article>
+
       </div>
+
     </section>
 
+
+    <!-- CONTACT -->
     <section id="contact" class="section-shell contact-section reveal">
+
       <h2>say hello.</h2>
+
       <div class="contact-links">
-        <a href="mailto:charleslim10806@gmail.com">email</a>
-        <a href="https://www.linkedin.com/in/lim-charles-b4199926b" target="_blank" rel="noopener noreferrer">linkedin ↗</a>
-        <a href="https://github.com/hongecc" target="_blank" rel="noopener noreferrer">github ↗</a>
-        <a href="testimonials.html">testimonials</a>
+
+        <a href="mailto:charleslim10806@gmail.com">
+          email
+        </a>
+
+        <a href="https://www.linkedin.com/in/lim-charles-b4199926b" target="_blank" rel="noopener noreferrer">
+          linkedin ↗
+        </a>
+
+        <a href="https://github.com/hongecc" target="_blank" rel="noopener noreferrer">
+          github ↗
+        </a>
+
       </div>
+
     </section>
+
   </main>
 
+
   <footer class="site-footer section-shell">
-    <span>charles' portfolio</span>
-    <span>singapore · 2026</span>
+
+    <span>
+      charles' portfolio
+    </span>
+
+    <span>
+      singapore · 2026
+    </span>
+
   </footer>
+
 </body>
+
 </html>
