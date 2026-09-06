@@ -17,35 +17,63 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.classList.toggle('is-open', !open);
     });
 
-    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-    window.addEventListener('resize', () => { if (window.innerWidth > 780) closeMenu(); });
+    menu.querySelectorAll('a').forEach(link =>
+      link.addEventListener('click', closeMenu)
+    );
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 780) closeMenu();
+    });
   }
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', event => {
       const id = anchor.getAttribute('href');
+
       if (!id || id === '#') return;
+
       const target = document.querySelector(id);
+
       if (!target) return;
+
       event.preventDefault();
+
       const headerHeight = header ? header.offsetHeight : 0;
+
       window.scrollTo({
-        top: target.getBoundingClientRect().top + window.scrollY - headerHeight - 10,
-        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+        top:
+          target.getBoundingClientRect().top +
+          window.scrollY -
+          headerHeight -
+          10,
+
+        behavior: window.matchMedia(
+          '(prefers-reduced-motion: reduce)'
+        ).matches
+          ? 'auto'
+          : 'smooth'
       });
     });
   });
 
   const items = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.06 });
+
+  if (
+    'IntersectionObserver' in window &&
+    !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  ) {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.06 }
+    );
+
     items.forEach(item => observer.observe(item));
   } else {
     items.forEach(item => item.classList.add('is-visible'));
